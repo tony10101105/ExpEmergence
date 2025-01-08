@@ -63,16 +63,16 @@ cd lm-evaluation-harness
 mkdir eval_out
 cd eval_out
 ```
-2. Put mmlu.sh and all_models.txt provided in our evaluation/mmlu to lm-evaluation-harness/eval_out and run it:
+2. *Put mmlu.sh* and *all_models.txt* provided in our *evaluation/mmlu* to *lm-evaluation-harness/* and run it:
 ```bash
 sh mmlu.sh
 ```
-3. Put mmlu_hardness_calculator_instance.py and mmlu_categories.py provided in our evaluation/mmlu to lm-evaluation-harness/eval_out and run it to generate the csv file as those in our data/:
+3. Put *base_llm_benchmark_eval - base_llm_benchmark_eval.csv*, *mmlu_hardness_calculator_instance.py* and *mmlu_categories.py* provided in our *evaluation/mmlu* to *lm-evaluation-harness/eval_out* and run it to generate the csv file as those in our *data/*:
 ```bash
 python mmlu_hardness_calculator_instance.py
 ```  
 
-<TAB>Generate the accuracy-based version by running:  
+Generate the accuracy-based version by running:  
 
 ```bash
 python mmlu_hardness_calculator_instance_acc.py

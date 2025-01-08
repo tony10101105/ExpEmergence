@@ -53,6 +53,31 @@ python fit_cluster_robustness_threshold.py
 
 We welcome you to use our code and data to exploit new insights and methods. NOTE: the data (csv files) is partially built upon the data from the paper [Observational Scaling Laws](https://github.com/ryoungj/ObsScaling). Thanks for their excellent work!
 
+## Replication of LLM Evaluation
+You can evaluate any LLMs and run our experiments (note that replicating our csv files, including over 50 LLMs on 9 datasets, can be computationally expensive). Three steps are required to replicate a dataset (use mmlu as the example): 
+
+1. Install the [lm-eval package](https://github.com/EleutherAI/lm-evaluation-harness).
+
+```bash
+cd lm-evaluation-harness
+mkdir eval_out
+cd eval_out
+```
+2. Put mmlu.sh and evaluated_models.txt provided in our evaluation/mmlu to lm-evaluation-harness/eval_out and run it:
+```bash
+sh mmlu.sh
+```
+3. Put mmlu_hardness_calculator_instance.py and mmlu_categories.py provided in our evaluation/mmlu to lm-evaluation-harness/eval_out and run it to generate the csv file as those in our data/:
+```bash
+python mmlu_hardness_calculator_instance.py
+```  
+
+<TAB>Generate the accuracy-based version by running:  
+
+```bash
+python mmlu_hardness_calculator_instance_acc.py
+```
+
 ## Citation
 ```
 @article{wu2024u,

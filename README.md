@@ -8,8 +8,8 @@ Official code of the paper [U-shaped and Inverted-U Scaling behind Emergent Abil
 This paper explains why LLMs sometimes experience emergent abilities. In short, [deep double descent](https://arxiv.org/abs/1912.02292) on easy questions and [U-shaped scaling](https://arxiv.org/abs/2211.02011) on hard questions offset each other, leading to initially flat overall performance. The performance soar occurs around the happening of second descent on easy questions. We further provide a simple pipeline to forecast the occurrence of emergent abilities.
 
 <p float="left">
-  <img src="vis/mmlu_spectro_gn_10_d_7_redist.png" width="500" />
-  <img src="vis/persian_qa_spectro_gn_10_d_5_redist.png" width="500" /> 
+  <img src="vis/mmlu_spectro_gn_10_d_7_redist.png" width="450" />
+  <img src="vis/persian_qa_spectro_gn_10_d_5_redist.png" width="450" /> 
 </p>
 
 ## Setup

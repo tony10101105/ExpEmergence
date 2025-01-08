@@ -63,7 +63,7 @@ cd lm-evaluation-harness
 mkdir eval_out
 cd eval_out
 ```
-2. Put mmlu.sh and evaluated_models.txt provided in our evaluation/mmlu to lm-evaluation-harness/eval_out and run it:
+2. Put mmlu.sh and all_models.txt provided in our evaluation/mmlu to lm-evaluation-harness/eval_out and run it:
 ```bash
 sh mmlu.sh
 ```

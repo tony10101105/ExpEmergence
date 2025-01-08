@@ -51,7 +51,7 @@ python fit_cluster_robustness_degree.py
 python fit_cluster_robustness_threshold.py
 ```
 
-We welcome you to use our code and data to exploit new insights and methods.
+We welcome you to use our code and data to exploit new insights and methods. NOTE: the data (csv files) is partially built upon the data from the paper [Observational Scaling Laws](https://github.com/ryoungj/ObsScaling). Thanks for their excellent work!
 
 ## Citation
 ```

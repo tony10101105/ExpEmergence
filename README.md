@@ -51,7 +51,7 @@ python fit_cluster_robustness_degree.py
 python fit_cluster_robustness_threshold.py
 ```
 
-We welcome you to use our code and data to exploit new insights and methods. NOTE: the data (csv files) is partially built upon the data from the paper [Observational Scaling Laws](https://github.com/ryoungj/ObsScaling). Thanks for their excellent work!
+We welcome you to use our code and data to exploit new insights and methods. NOTE: the data *base_llm_benchmark_eval - base_llm_benchmark_eval.csv* that we built upon is from the paper [Observational Scaling Laws](https://github.com/ryoungj/ObsScaling). Thanks for their excellent work!
 
 ## Replication of LLM Evaluation
 You can evaluate any LLMs and run our experiments (note that replicating our csv files, including over 50 LLMs on 9 datasets, can be computationally expensive). Three steps are required to replicate a dataset (use mmlu as the example): 
@@ -67,15 +67,15 @@ cd eval_out
 ```bash
 sh mmlu.sh
 ```
-3. Put *base_llm_benchmark_eval - base_llm_benchmark_eval.csv*, *mmlu_hardness_calculator_instance.py* and *mmlu_categories.py* provided in our *evaluation/mmlu* to *lm-evaluation-harness/eval_out* and run it to generate the csv file as those in our *data/*:
+3. Put *base_llm_benchmark_eval - base_llm_benchmark_eval.csv*, *mmlu_question_grouping.py* and *mmlu_metadata.py* provided in our *evaluation/mmlu* to *lm-evaluation-harness/eval_out* and run it to generate the csv file as those in our *data/*:
 ```bash
-python mmlu_hardness_calculator_instance.py
+python mmlu_question_grouping.py
 ```  
 
 Generate the accuracy-based version by placing and running:  
 
 ```bash
-python mmlu_hardness_calculator_instance_acc.py
+python mmlu_question_grouping_acc.py
 ```
 
 ## Citation

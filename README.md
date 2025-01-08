@@ -2,10 +2,10 @@
 Official code of the paper [U-shaped and Inverted-U Scaling behind Emergent Abilities of Large Language Models](https://arxiv.org/abs/2410.01692)
 
 ## News
-- (Nov. 2024) The paper has been accepted to NeurIPS'24 ATTRIB workshop as **oral presentation**.
+- (Nov. 2024) The paper has been accepted to the NeurIPS'24 ATTRIB workshop as **oral presentation**.
 
 ## Overview
-This paper explains why LLMs sometimes experience emergent abilities. In short, [deep double descent](https://arxiv.org/abs/1912.02292) on easy questions and [U-shaped scaling](https://arxiv.org/abs/2211.02011) on hard questions offset each other, leading to initially flat overall performance. The performance soar occurs around the happening of second descent on easy questions. We further provide a simple pipeline to forecast the occurrence of emergent abilities.
+This paper explains why LLMs sometimes experience emergent abilities. In short, [deep double descent](https://arxiv.org/abs/1912.02292) on easy questions and [U-shaped scaling](https://arxiv.org/abs/2211.02011) on hard questions offset each other, leading to initially flat overall performance. The performance soar occurs around the second descent on easy questions. We further provide a simple pipeline to forecast the occurrence of emergent abilities.
 
 <p float="left">
   <img src="vis/mmlu_spectro_gn_10_d_7_redist.png" width="375" />
@@ -24,7 +24,7 @@ conda activate ExpEmergence
 ```
 
 ## :rocket: Usage
-We include six scripts to replicate main results of this work:
+We include six scripts to replicate the main results of this work:
 
 **Plot model overall performance measured by accuracy or TC Brier Score:**
 ```bash
@@ -38,7 +38,7 @@ python plot_question_group_tc_brier.py
 ```bash
 python plot_question_group_acc.py
 ```
-**Perform Slice-and-Sandwich to construct the accuracy-based scaling law using models before emergence threshold:**
+**Perform Slice-and-Sandwich to construct the accuracy-based scaling law using models before the emergence threshold:**
 ```bash
 python fit_cluster.py.py
 ```

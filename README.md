@@ -72,7 +72,7 @@ sh mmlu.sh
 python mmlu_hardness_calculator_instance.py
 ```  
 
-Generate the accuracy-based version by running:  
+Generate the accuracy-based version by placing and running:  
 
 ```bash
 python mmlu_hardness_calculator_instance_acc.py

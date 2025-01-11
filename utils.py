@@ -50,14 +50,13 @@ fit_parameter = {
 }
 
 def model_filter(df):
-    # filter out probably over-trained small models
+    """filter out probably over-trained small models"""
     df = df[df['Model'] != 'microsoft/phi-1_5']
     df = df[df['Model'] != 'microsoft/phi-2']
     df = df[df['Model'] != 'Qwen/Qwen1.5-0.5B']
     df = df[df['Model'] != 'Qwen/Qwen1.5-1.8B']
     df = df[df['Model'] != 'Qwen/Qwen1.5-4B']
     df = df[df['Model'] != 'stabilityai/stablelm-2-1_6b']
-    df = df[df['Model'] != 'meta-llama/Meta-Llama-3-8B']
     return df
 
 def whiten(hex_color, k):

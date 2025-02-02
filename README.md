@@ -16,7 +16,7 @@ This paper explains why LLMs sometimes experience emergent abilities. In short, 
 ## Setup
 Download and set up the repository:
 ```bash
-git clone https://github.com/tony10101105/U-shaped-and-Inverted-U-Scaling-behind-Emergent-Abilities-of-Large-Language-Models.git
+git clone https://github.com/tony10101105/ExpEmergence.git
 cd ExpEmergence
 ```
 ```bash

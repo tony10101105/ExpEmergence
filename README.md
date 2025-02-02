@@ -17,7 +17,7 @@ This paper explains why LLMs sometimes experience emergent abilities. In short, 
 Download and set up the repository:
 ```bash
 git clone https://github.com/tony10101105/U-shaped-and-Inverted-U-Scaling-behind-Emergent-Abilities-of-Large-Language-Models.git
-cd U-shaped-and-Inverted-U-Scaling-behind-Emergent-Abilities-of-Large-Language-Models
+cd ExpEmergence
 ```
 ```bash
 conda env create -name ExpEmergence -file requirements.txt
@@ -66,12 +66,14 @@ sh mmlu.sh
 3. Put *base_llm_benchmark_eval - base_llm_benchmark_eval.csv*, *mmlu_question_grouping.py* and *mmlu_metadata.py* provided in our *evaluation/mmlu* to *lm-evaluation-harness/eval_out* and run it to generate the csv file as those in our *data/*:
 ```bash
 mkdir eval_out
-mv $ROOT_DIR$/U-shaped-and-Inverted-U-Scaling-behind-Emergent-Abilities-of-Large-Language-Models/base_llm_benchmark_eval - base_llm_benchmark_eval.csv
-$ROOT_DIR$/lm-evaluation-harness/
+cp $ROOT_DIR$/ExpEmergence/evaluation/base_llm_benchmark_eval - base_llm_benchmark_eval.csv $ROOT_DIR$/lm-evaluation-harness/eval_out/base_llm_benchmark_eval - base_llm_benchmark_eval.csv
+cp $ROOT_DIR$/ExpEmergence/evaluation/mmlu/mmlu_question_grouping.py $ROOT_DIR$/lm-evaluation-harness/eval_out/mmlu_question_grouping.py
+cp $ROOT_DIR$/ExpEmergence/evaluation/mmlu/mmlu_metadata.py $ROOT_DIR$/lm-evaluation-harness/eval_out/mmlu_metadata.py
+cd eval_out
 python mmlu_question_grouping.py
 ```  
 
-Generate the accuracy-based version by placing and running:  
+Generate the accuracy-based version by instead placing and running:  
 
 ```bash
 python mmlu_question_grouping_acc.py

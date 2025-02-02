@@ -63,7 +63,7 @@ You can evaluate any LLMs and run our experiments (note that replicating our csv
 cd lm-evaluation-harness
 mkdir eval_out
 ```
-2. *Put mmlu.sh* and *all_models.txt* provided in our *evaluation/mmlu* to *lm-evaluation-harness/* and run it:
+2. Put *all_models.txt* and *mmlu.sh* provided in our *evaluation/* and *evaluation/mmlu* to *lm-evaluation-harness/* and run it:
 ```bash
 sh mmlu.sh
 ```
@@ -80,10 +80,10 @@ python mmlu_question_grouping_acc.py
 
 ## Citation
 ```
-@article{wu2024u,
+@inproceedings{wu2024u,
   title={U-shaped and Inverted-U Scaling behind Emergent Abilities of Large Language Models},
   author={Wu, Tung-Yu and Lo, Pei-Yu},
-  journal={arXiv preprint arXiv:2410.01692},
-  year={2024}
+  booktitle={Proceedings of the International Conference on Learning Representations (ICLR)},
+  year={2025}
 }
 ```

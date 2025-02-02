@@ -7,8 +7,8 @@ from utils import basic_parameter, overall_plot_parameter, model_filter
 
 
 # parameters
-dataset = 'arc' # must be in basic_parameter
-mode = 'brier' # 'brier' or 'acc'
+dataset = 'mmlu' # must be in basic_parameter
+mode = 'acc' # 'brier' or 'acc'
 brier_mode = 'redist' # if mode == 'acc', brier_mode will have no impact
 
 dataset_type = basic_parameter[dataset]['type']

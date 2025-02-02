@@ -7,7 +7,7 @@ import numpy as np
 from utils import basic_parameter, fit_parameter, model_filter, sigmoid, inverse_sigmoid, clip_value, brier2acc_ols_model
 
 
-dataset = 'parsinlu_qa_mc' # must be mmlu, arithmetic, or parsinlu_qa_mc
+dataset = 'mmlu' # must be mmlu, arithmetic, or parsinlu_qa_mc
 save = True # whether to save figures as pdf
 use_hard_lift = False # whether use hard_lift in Appendix.G.2
 plot_mse = False # whether to plot mse loss

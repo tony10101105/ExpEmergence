@@ -9,9 +9,9 @@ from utils import basic_parameter, fit_parameter, model_filter, sigmoid, inverse
 
 dataset = 'mmlu' # must be in task_parameter
 save = True # whether to save figures as pdf
-use_hard_lift = False # whether use hard_lift in Appendix.G.2
+use_hard_lift = False # whether use hard_lift mentioned in Appendix.G.2
 plot_mse = False # whether to plot mse loss
-clip_scaling_law = False # whether to clip values beyond min & max
+clip_scaling_law = False # whether to clip values beyond (min, max)
 plot_oracle = False # oracle is to let the baseline see both train and test split
 
 

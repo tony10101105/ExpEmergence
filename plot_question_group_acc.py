@@ -9,7 +9,7 @@ import plotly.express.colors as pec
 
 
 # parameters
-dataset = 'parsinlu_qa_mc' # must be mmlu, arithmetic, or parsinlu_qa_mc
+dataset = 'mmlu' # must be mmlu, arithmetic, or parsinlu_qa_mc
 brier_mode = 'redist' # redist or undist. The former is w/ conditionality and the latter is w/o conditionality
 group_num = 10 # number of question groups
 show_color_bar = False # whether to show the color bar

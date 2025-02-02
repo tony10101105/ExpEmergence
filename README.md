@@ -20,7 +20,7 @@ git clone https://github.com/tony10101105/ExpEmergence.git
 cd ExpEmergence
 ```
 ```bash
-conda env create -name ExpEmergence -file requirements.txt
+conda env create -n ExpEmergence -f requirements.txt
 conda activate ExpEmergence
 ```
 

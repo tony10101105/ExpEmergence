@@ -63,11 +63,11 @@ Below we describe how to evaluate LLMs on a dataset to generate csv files as in 
 cd lm-evaluation-harness
 cp $ROOT_DIR$/ExpEmergence/evaluation/all_models.txt all_models.txt
 cp $ROOT_DIR$/ExpEmergence/evaluation/mmlu/mmlu.sh mmlu.sh
+mkdir eval_out
 bash mmlu.sh
 ```
 3. Put *base_llm_benchmark_eval - base_llm_benchmark_eval.csv*, *mmlu_question_grouping.py* and *mmlu_metadata.py* provided in our *evaluation/mmlu* to *lm-evaluation-harness/eval_out* and run it to generate the csv file as those in our *data/*:
 ```bash
-mkdir eval_out
 cd eval_out
 cp $ROOT_DIR$/ExpEmergence/evaluation/base_llm_benchmark_eval - base_llm_benchmark_eval.csv base_llm_benchmark_eval - base_llm_benchmark_eval.csv
 cp $ROOT_DIR$/ExpEmergence/evaluation/mmlu/mmlu_question_grouping.py mmlu_question_grouping.py

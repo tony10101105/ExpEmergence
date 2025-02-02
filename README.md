@@ -52,7 +52,7 @@ python fit_cluster_robustness_degree.py
 python fit_cluster_robustness_threshold.py
 ```
 
-We welcome you to use our code and data to exploit new insights and methods. NOTE: the data *base_llm_benchmark_eval - base_llm_benchmark_eval.csv* that we built upon is from the paper [Observational Scaling Laws](https://github.com/ryoungj/ObsScaling). Thanks for their excellent work!
+The data *base_llm_benchmark_eval - base_llm_benchmark_eval.csv* we built upon is from the paper [Observational Scaling Laws](https://github.com/ryoungj/ObsScaling). Thanks for their excellent work!
 
 ## Replication of LLM Evaluation
 Below we describe how to evaluate LLMs on a dataset to generate csv files as in our */data*. Three steps are required (use MMLU as the example): 

@@ -2,6 +2,7 @@
 Official code of the paper [U-shaped and Inverted-U Scaling behind Emergent Abilities of Large Language Models](https://arxiv.org/abs/2410.01692)
 
 ## News
+- (Jan. 2025) The paper has been accepted to the ICLR'25 as a main conference paper.
 - (Nov. 2024) The paper has been accepted to the NeurIPS'24 ATTRIB workshop as **oral presentation**.
 
 ## Overview
@@ -61,7 +62,6 @@ You can evaluate any LLMs and run our experiments (note that replicating our csv
 ```bash
 cd lm-evaluation-harness
 mkdir eval_out
-cd eval_out
 ```
 2. *Put mmlu.sh* and *all_models.txt* provided in our *evaluation/mmlu* to *lm-evaluation-harness/* and run it:
 ```bash

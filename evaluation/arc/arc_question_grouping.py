@@ -53,7 +53,7 @@ args = parser.parse_args()
 removed_models = ['microsoft__phi-1_5', 'microsoft__phi-2', 'Qwen__Qwen1.5-0.5B', 'Qwen__Qwen1.5-1.8B',\
                 'Qwen__Qwen1.5-4B', 'stabilityai__stablelm-2-1_6b', 'facebook/xglm-564M']
 
-csv_file = 'base_llm_benchmark_eval - base_llm_benchmark_eval.csv'
+csv_file = 'base_llm_benchmark_eval.csv'
 eval_data = load_csv(csv_file)
 eval_data.dropna(subset=['FLOPs (1E21)'])
 

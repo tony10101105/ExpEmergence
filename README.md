@@ -62,7 +62,6 @@ You can evaluate any LLMs and run our experiments (note that replicating our csv
 ```bash
 cd lm-evaluation-harness
 mkdir eval_out
-cd eval_out
 ```
 2. *Put mmlu.sh* and *all_models.txt* provided in our *evaluation/mmlu* to *lm-evaluation-harness/* and run it:
 ```bash

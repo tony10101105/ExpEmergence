@@ -2,7 +2,7 @@
 
 MODEL_FILE="all_models.txt"
 PYTHON_CMD="lm_eval --model hf --model_args pretrained=PLACEHOLDER,dtype=float16,parallelize=True,trust_remote_code=True --num_fewshot 1 --tasks hellaswag\
- --device cuda --batch_size auto --output_path /home/b08901133/lm-evaluation-harness/eval_out/hellaswag --log_samples"
+ --device cuda --batch_size auto --output_path eval_out/hellaswag --log_samples"
 
 while IFS= read -r model_name
 do

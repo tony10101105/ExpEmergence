@@ -25,7 +25,7 @@ conda activate ExpEmergence
 ```
 
 ## :rocket: Usage
-We include six scripts to replicate the main results of this work:
+Six scripts to replicate the main results:
 
 **Plot model overall performance measured by accuracy or TC Brier Score:**
 ```bash

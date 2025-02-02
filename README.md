@@ -1,4 +1,4 @@
-# U-shaped-and-Inverted-U-Scaling-behind-Emergent-Abilities-of-Large-Language-Models
+# U-shaped and Inverted-U Scaling behind Emergent Abilities of Large Language Models
 Official code of the paper [U-shaped and Inverted-U Scaling behind Emergent Abilities of Large Language Models](https://arxiv.org/abs/2410.01692)
 
 ## News

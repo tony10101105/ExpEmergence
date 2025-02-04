@@ -41,7 +41,7 @@ python plot_question_group_acc.py
 ```
 **Perform Slice-and-Sandwich to construct the accuracy-based scaling law using models before the emergence threshold:**
 ```bash
-python fit_cluster.py.py
+python fit_cluster.py
 ```
 **Slice-and-Sandwich's robustness analysis regarding polynomial degree:**
 ```bash
@@ -52,13 +52,13 @@ python fit_cluster_robustness_degree.py
 python fit_cluster_robustness_threshold.py
 ```
 
-The data *base_llm_benchmark_eval.csv* we built upon is from the paper [Observational Scaling Laws](https://github.com/ryoungj/ObsScaling). Thanks for their excellent work!
+The data `base_llm_benchmark_eval.csv` we built upon is from the paper [Observational Scaling Laws](https://github.com/ryoungj/ObsScaling). Thanks for their excellent work!
 
 ## Replication of LLM Evaluation
 Below we describe how to evaluate LLMs on a dataset to generate csv files as in our */data*. Three steps are required (use MMLU as the example): 
 
 1. Install the [lm-eval package](https://github.com/EleutherAI/lm-evaluation-harness).
-3. Put *all_models.txt* and *mmlu.sh* provided in our *evaluation/* and *evaluation/mmlu* to *lm-evaluation-harness/* and run it:
+3. Put `all_models.txt` and `mmlu.sh` provided in our *evaluation/* and *evaluation/mmlu* to *lm-evaluation-harness/* and run it:
 ```bash
 cd lm-evaluation-harness
 cp $ROOT_DIR$/ExpEmergence/evaluation/all_models.txt all_models.txt
@@ -66,7 +66,7 @@ cp $ROOT_DIR$/ExpEmergence/evaluation/mmlu/mmlu.sh mmlu.sh
 mkdir eval_out
 bash mmlu.sh
 ```
-3. Put *base_llm_benchmark_eval.csv*, *mmlu_question_grouping.py* and *mmlu_metadata.py* provided in our *evaluation/mmlu* to *lm-evaluation-harness/eval_out* and run it to generate the csv file as those in our *data/*:
+3. Put `base_llm_benchmark_eval.csv`, `mmlu_question_grouping.py` and `mmlu_metadata.py` provided in our *evaluation/mmlu* to *lm-evaluation-harness/eval_out* and run it to generate the csv file as those in our *data/*:
 ```bash
 cd eval_out
 cp $ROOT_DIR$/ExpEmergence/evaluation/base_llm_benchmark_eval.csv base_llm_benchmark_eval.csv

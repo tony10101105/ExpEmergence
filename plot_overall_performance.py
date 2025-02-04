@@ -6,10 +6,12 @@ import numpy as np
 from utils import basic_parameter, overall_plot_parameter, model_filter
 
 
-# parameters
+### parameters
 dataset = 'mmlu' # must be in basic_parameter
 mode = 'acc' # 'brier' or 'acc'
 brier_mode = 'redist' # if mode == 'acc', brier_mode will have no impact
+###
+
 
 dataset_type = basic_parameter[dataset]['type']
 threshold = basic_parameter[dataset]['threshold']
@@ -55,7 +57,7 @@ fig.update_layout(transition_duration=500, xaxis_title='log compute (M)', yaxis_
                     margin=dict(l=10, r=10, t=10, b=10))
 
 
-fig.show()
+# fig.show()
 pio.kaleido.scope.mathjax = None
 os.makedirs(f'figure/{dataset}', exist_ok=True)
 if mode == 'brier':

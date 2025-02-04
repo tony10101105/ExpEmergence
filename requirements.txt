@@ -1,7 +1,7 @@
 plotly
-python-kaleido
-matplotlib
-pandas
-statsmodels
-numpy
-tqdm
+kaleido
+numpy==1.26.4
+matplotlib==3.9.2
+pandas==2.2.2
+statsmodels==0.14.4
+tqdm==4.66.4

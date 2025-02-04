@@ -8,11 +8,13 @@ from utils import basic_parameter, group_plot_parameter, model_filter, whiten
 import plotly.express.colors as pec
 
 
-# parameters
+### parameters
 dataset = 'mmlu' # must be in task_parameter
 brier_mode = 'redist' # redist or undist. The former is w/ conditionality and the latter is w/o conditionality
 group_num = 10 # number of question groups
 show_color_bar = True # whether to show the color bar
+###
+
 
 dataset_type = basic_parameter[dataset]['type'] # 'Emergence' or 'No Emergence'
 threshold = basic_parameter[dataset]['threshold'] # emergent threshold and also the threshold for question difficulty calculation
@@ -128,7 +130,7 @@ fig.update_layout(transition_duration=500, xaxis_title='log compute (M)', yaxis_
                     height=600)
 
 
-fig.show()
+# fig.show()
 pio.kaleido.scope.mathjax = None
 os.makedirs(f'figure/{dataset}', exist_ok=True)
 fig.write_image(f'figure/{dataset}/{dataset}_spectro_gn_{group_num}_d_{degree}_{brier_mode}.pdf', engine='kaleido')

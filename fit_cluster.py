@@ -7,15 +7,18 @@ import numpy as np
 from utils import basic_parameter, fit_parameter, model_filter, sigmoid, inverse_sigmoid, clip_value, brier2acc_ols_model
 
 
+### parameters
 dataset = 'mmlu' # must be in task_parameter
 save = True # whether to save figures as pdf
 use_hard_lift = False # whether use hard_lift mentioned in Appendix.G.2
 plot_mse = False # whether to plot mse loss
 clip_scaling_law = False # whether to clip values beyond (min, max)
 plot_oracle = False # oracle is to let the baseline see both train and test split
+###
 
 
 os.makedirs(f'figure/{dataset}/fit', exist_ok=True)
+
 threshold = 10**basic_parameter[dataset]['threshold']
 random_guess_acc = basic_parameter[dataset]['random_guess_acc']
 clusters = fit_parameter[dataset]['clusters']
@@ -134,9 +137,7 @@ plt.clf()
 
 
 ### fit our acc prediction
-coefficients = acc2brier_ols_model.params
-intercept = coefficients[0]
-slope = coefficients[1]
+intercept, slope = acc2brier_ols_model.params
 
 df['acc_pred'] = df['brier_pred'].apply(lambda x: brier2acc_ols_model(x, intercept, slope))
 

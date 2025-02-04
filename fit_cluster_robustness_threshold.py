@@ -7,12 +7,15 @@ import numpy as np
 from utils import basic_parameter, fit_parameter, model_filter, sigmoid, inverse_sigmoid, clip_value, brier2acc_ols_model
 
 
+### parameters
 dataset = 'mmlu' # must be mmlu, arithmetic, or parsinlu_qa_mc
 save = True # whether to save figures as pdf
 use_hard_lift = False # whether use hard_lift in Appendix.G.2
 plot_mse = False # whether to plot mse loss
 clip_scaling_law = False # whether to clip values beyond min & max
 plot_oracle = False # oracle is to let the baseline see both train and test split
+###
+
 
 os.makedirs(f'figure/{dataset}/fit', exist_ok=True)
 
@@ -127,9 +130,7 @@ for threshold in thresholds:
     ### predict accuracies along with baselines
 
     # fit our acc prediction
-    coefficients = acc2brier_ols_model.params
-    intercept = coefficients[0]
-    slope = coefficients[1]
+    intercept, slope = acc2brier_ols_model.params
 
     df['acc_pred_3'] = df['brier_pred_3'].apply(lambda x: brier2acc_ols_model(x, intercept, slope))
     df['acc_pred_5'] = df['brier_pred_5'].apply(lambda x: brier2acc_ols_model(x, intercept, slope))
